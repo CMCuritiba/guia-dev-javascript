@@ -30,6 +30,10 @@ diretórios adequada (frontend/backend).
 Instalar e configurar sequelize para utilizar quando possível migrations e
 seeds.
 
+### Yup
+
+Validação de dados no backend e frontend
+
 ## Github
 
 ### Templates issues/pull request
