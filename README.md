@@ -45,15 +45,17 @@ raiz--+
                            +--migrations
 ```
 
-`raiz` => Diretório raiz da aplicação
-`raiz/src` => Diretório onde fica o código-fonte da aplicação
-`raiz/src/app` => Diretório da aplicação em si
-`raiz/src/app/controllers` => Diretório da camada de Controllers da aplicação
-`raiz/src/app/middlewares` => Diretório da camada de Middlewares da aplicação
-`raiz/src/app/models` => Diretório da camada de Models da aplicação
-`raiz/src/config` => Diretório da de arquivos de configuração da aplicação
-`raiz/src/database` => Diretório de conexão com o(s) BD(s) da aplicação
-`raiz/src/database/migrations` => Diretório de migrations da aplicação
+```
+raiz => Diretório raiz da aplicação
+raiz/src => Diretório onde fica o código-fonte da aplicação
+raiz/src/app => Diretório da aplicação em si
+raiz/src/app/controllers => Diretório da camada de Controllers da aplicação
+raiz/src/app/middlewares => Diretório da camada de Middlewares da aplicação
+raiz/src/app/models => Diretório da camada de Models da aplicação
+raiz/src/config => Diretório da de arquivos de configuração da aplicação
+raiz/src/database => Diretório de conexão com o(s) BD(s) da aplicação
+raiz/src/database/migrations => Diretório de migrations da aplicação
+```
 
 ### Sequelize (orm/migrations/seeds)
 
