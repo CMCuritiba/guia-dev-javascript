@@ -186,9 +186,9 @@ raiz/src/routes => Diretório de rotas da aplicação
 raiz/src/services => Diretório de serviços da aplicação
 
 raiz/src/store => Diretório de stores da aplicação (Redux/Redux Saga)
-raiz/src/store => Módulos da aplicação gerenciados pelo Redux/Redux Saga
+raiz/src/store/modules => Módulos da aplicação gerenciados pelo Redux/Redux Saga
 
-raiz/src/store => Diretório de estilos globais da aplicação
+raiz/src/styles => Diretório de estilos globais da aplicação
 
 ```
 
