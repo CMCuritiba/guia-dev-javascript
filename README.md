@@ -89,6 +89,14 @@ raiz/src/database/migrations => Diretório de migrations da aplicação
 
 ```
 
+### Estrutura diretórios (backend-Adonis)
+
+A estrutura básica de diretórios utilizando o Adonis pode ser encontrada neste link :
+https://adonisjs.com/docs/4.1/folder-structure
+
+Adicionar o diretório ```app/Services``` nesta arquitetura para seguir o padrão definido anteriormente
+no contexto do express.
+
 
 ### Sequelize (orm/migrations/seeds)
 
