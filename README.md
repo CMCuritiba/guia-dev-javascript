@@ -1,22 +1,118 @@
 # Relação de boas práticas para desenvolvimento NodeJS
+Baseado nos padrões definidos no curso da Rocketseat
 
 ## Ferramentas para desenvolvimento
 
 ### VSCode
 
+[Download](https://code.visualstudio.com/)
+
+settings.json
+
+```
+"editor.formatOnSave": true,
+"eslint.autoFixOnSave": true,
+```
+
 Instalação de plugins e configuração para manter padrão mínimo
+
+[ESLint](https://github.com/Microsoft/vscode-eslint)
+
+.eslintrc.js
+
+```
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+  },
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+    'prettier',
+    'prettier/react',
+    'jest-dom',
+    'testing-library',
+    'jsx-a11y',
+    'import',
+  ],
+  rules: {
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
+    'import/prefer-default-export': 'off',
+    'no-console': ['error', { allow: ['tron'] }],
+    'testing-library/await-async-query': 'error',
+    'testing-library/no-await-sync-query': 'error',
+    'testing-library/no-debug': 'warn',
+  },
+};
+```
+
+[Prettier](https://github.com/prettier/prettier-vscode)
+
+.prettierrc
+
+```
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+```
+
+[Color Highlight](https://github.com/egonyans/vscode-ext-color-highlight)
+
+[VSCode Styled Components](https://github.com/styled-components/vscode-styled-components)
+
+[Editor Config for VSCode](https://github.com/editorconfig/editorconfig-vscode)
+
+.editorconfig
+
+```
+root = true
+
+[*]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+```
+
+[Rocketseat ReactJS](https://github.com/Rocketseat/rocketseat-vscode-reactjs-snippets)
 
 ## Setup de projeto
 
-### ESLint (airbnb)
+### ESLint airbnb (backend/frontend)
 
 Instalar e configurar ESLint para usar padrão desenvolvimento airbnb
 
-### Sucrase
+### Prettier (backend/frontend)
+
+Instalar e configurar Prettier para formatação automática do código
+
+### Sucrase (backend)
 
 Instalar e configurar sucrase para substituir Babel
 
-### Jest
+### Reactotron (frontend)
+
+Instalar e configurar reactotron para fornecer/inspecionar informações do sistema de maneira mais amigável
+
+### Jest (backend)
 
 Instalar e configurar Jest para testes unitários e de integração
 
@@ -209,9 +305,15 @@ Utilizar a Styled components.
 
 Usar pacote unform para gerenciamento de formulários
 
+### Prototipação/Wireframe
+
+Utilizar o [figma](https://www.figma.com) para prototipação de telas e definição de componentes puros (react) e (styled components)
+
 ## Deploy
 
 ### Automatizar
 
 ### Docker
 https://github.com/CMCuritiba/guia-dev-javascript.git
+
+
