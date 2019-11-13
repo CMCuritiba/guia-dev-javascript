@@ -96,21 +96,20 @@ insert_final_newline = true
 
 ## Setup de projeto
 
-### ESLint airbnb (backend/frontend)
-
-Instalar e configurar ESLint para usar padrão desenvolvimento airbnb
-
-### Prettier (backend/frontend)
-
-Instalar e configurar Prettier para formatação automática do código
+### Configurando ESLint, Prettier, EditorConfig e Airbnb airbnb
+Seguir os passos do vídeo : https://www.youtube.com/watch?v=TI4v4Y8yRjw
 
 ### Sucrase (backend)
 
 Instalar e configurar sucrase para substituir Babel
 
+https://carloslevir.com/es6-node-sucrase/
+
 ### Reactotron (frontend)
 
 Instalar e configurar reactotron para fornecer/inspecionar informações do sistema de maneira mais amigável
+
+https://github.com/infinitered/reactotron
 
 ### Jest (backend)
 
