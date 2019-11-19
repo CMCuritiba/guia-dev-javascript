@@ -315,4 +315,9 @@ Utilizar o [figma](https://www.figma.com) para prototipação de telas e defini�
 ### Docker
 https://github.com/CMCuritiba/guia-dev-javascript.git
 
+### Guia de procedimentos
+Visiste a wiki e contribua 
+
+https://github.com/CMCuritiba/guia-dev-javascript/wiki
+
 
