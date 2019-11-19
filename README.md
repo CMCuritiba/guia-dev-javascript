@@ -318,6 +318,6 @@ https://github.com/CMCuritiba/guia-dev-javascript.git
 ### Guia de procedimentos
 Visiste a wiki e contribua 
 
-https://github.com/CMCuritiba/guia-dev-javascript/wiki
+https://github.com/CMCuritiba/guia-dev-javascript/wiki/Guia-de-procedimentos
 
 
