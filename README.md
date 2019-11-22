@@ -219,6 +219,16 @@ no Github
 Utilizar padrão definido pelo Gitflow para controle de versões com 2 branches
 (master e develop)
 
+### Husky / lint-staged
+
+Para garantir que os commits, pull requests, etc sigam o padrão adotado pela equipe, todas as operações de escrita no github são validadas. Os testes são executados e o código é revisado. Essas operações são feitas automaticamente e caso algum erro seja encontrado, a operação é interrompida até que o desenvolvedor conserte os problemas.
+
+Para maiores informações, consulte : 
+
+https://github.com/typicode/husky
+
+https://github.com/okonet/lint-staged
+
 ## Camada de apresentação
 
 ### Estrutura diretórios (frontend)
