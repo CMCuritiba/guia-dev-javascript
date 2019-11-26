@@ -1,5 +1,5 @@
 # Relação de boas práticas para desenvolvimento NodeJS
-(https://github.com/CMCuritiba/guia-dev-javascript/blob/master/BLOG_Analytics-Best-Practices-Part-1.jpg)
+![Best Practices](https://github.com/CMCuritiba/guia-dev-javascript/blob/master/BLOG_Analytics-Best-Practices-Part-1.jpg)
 Baseado nos padrões definidos no curso da Rocketseat
 
 ## Ferramentas para desenvolvimento
