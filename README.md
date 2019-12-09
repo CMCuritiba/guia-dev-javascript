@@ -90,15 +90,17 @@ Verificado o correto funcionamento da instalação do _nvm_ podemos proceder com
    $ nvm use v12.13.1
    ```
    onde v12.13.1 pode ser substituído por qualquer versão instalada localmente.
-   resultando 
-   ```Now using node v12.13.1 (npm v6.12.1)```
+   resultando:
+   `
+   Now using node v12.13.1 (npm v6.12.1)`
    
    e ao trocar a versão ativa para 
    ```sh
    $ nvm use v13.2.0
    ```
    temos o seguinte resultado no terminal
-   ```Now using node v13.2.0 (npm v6.13.1)```
+   `
+   Now using node v13.2.0 (npm v6.13.1)`
 
    repare que para cada versão do _node.js_, o _nvm_ utiliza a versão correspondente do _npm_, liberando-nos dessa preocupação.
 
