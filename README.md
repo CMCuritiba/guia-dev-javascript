@@ -5,9 +5,22 @@ Baseado nos padrões definidos no curso da Rocketseat
 
 ### NODE
 
-Um RTE, multi plataforma, open source, que executa código JavaScript fora do browser.
+É um RTE (Ambiente de execução), multi plataforma, open source, que executa código JavaScript fora do browser.
 
-Você pode facilmente instalar o NodeJs através 
+Você pode facilmente instalar o NodeJs através da página de download do próprio site Nodejs.org, ou de algumas outras formas mais convenientes para você.
+Mas, considerando que, supostamente, tenhamos a necessidade de utilizar versões diferentes do Node.js, escolhemos a _Melhor_ forma de instalar Node.js e NPM.
+
+Caso você já tenha instalado Node.js e NPM de forma global, não se preocupe, basta reverter a situação desistalando-os.
+Para a maioria dos casos, isto deve funcionar:
+```
+$ sudo apt-get remove nodejs
+$ sudo apt-get purge nodejs
+$ sudo apt-get autoremove
+```
+
+Então, a _Melhor_ forma de instalar o Node.js é utilizando o _Node Version Manager_, que nos permite instalar múltiplas versões de ambos, Node.js e NPM, e você pode 
+especificar qual versão estará __ativa__. O _nvm_ é perfeito para ambientes de desenvolvimento.
+
 
 
 
