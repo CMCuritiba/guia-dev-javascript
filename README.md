@@ -8,7 +8,7 @@ Baseado nos padrões definidos no curso da Rocketseat
 É um RTE (Ambiente de execução), multi plataforma, open source, que executa código JavaScript fora do browser.
 
 Você pode facilmente instalar o NodeJs através da página de download do próprio site Nodejs.org, ou de algumas outras formas mais convenientes para você.
-Mas, considerando que, supostamente, tenhamos a necessidade de utilizar versões diferentes do Node.js, escolhemos a _Melhor_ forma de instalar Node.js e NPM.
+Mas, considerando que, supostamente, tenhamos a necessidade de utilizar versões diferentes do Node.js, esclarecemos aqui a _Melhor_ forma de instalar Node.js e NPM.
 
 Caso você já tenha instalado Node.js e NPM de forma global, não se preocupe, basta reverter a situação desistalando-os.
 Para a maioria dos casos, isto deve funcionar:
@@ -17,9 +17,37 @@ $ sudo apt-get remove nodejs
 $ sudo apt-get purge nodejs
 $ sudo apt-get autoremove
 ```
+#### nvm (Node Version Manager)
 
-Então, a _Melhor_ forma de instalar o Node.js é utilizando o _Node Version Manager_, que nos permite instalar múltiplas versões de ambos, Node.js e NPM, e você pode 
-especificar qual versão estará __ativa__. O _nvm_ é perfeito para ambientes de desenvolvimento.
+Então, a _Melhor_ forma de instalar o Node.js é utilizando o _nvm_, que nos permite instalar múltiplas versões de ambos, Node.js e NPM, e especificar qual versão estará __ativa__. 
+O _[nvm](https://github.com/nvm-sh/nvm)_ é perfeito para ambientes de desenvolvimento.
+
+
+Basicamente o que deve-se fazer é rodar o seguinte script:
+```
+$ sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+Após finalizado o script, mudanças terão sido feitas no ```.profile```, então caso não queira fechar a janela do terminal e abrir uma nova, rode o seguinte comando para recarregá-lo:
+```$ source ~/.profile```
+
+Agora, verifique se o _nvm_ foi instalado corretamente rodando:
+```sh
+$ nvm --version
+```
+
+>Caso tua instalação não tenha ocorrido conforme informado acima, verifique novamente os passos descritos, e se você os seguiu corretamente. Para maiores detalhes visite [nvm](https://github.com/nvm-sh/nvm).
+
+Verificado o correto funcionamento da instalação do _nvm_ podemos proceder com a instalação do _Node.js_e _npm_.
+
+1. Para instalar uma versão específica do _Node.js_, utilize o comando:
+   - ```sh
+   $ nvm install 13.3.0 # ou  
+   ```
+
+
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 
 
 
