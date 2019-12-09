@@ -3,7 +3,7 @@ Baseado nos padrões definidos no curso da Rocketseat
 
 ## Ferramentas para desenvolvimento
 
-### NODE
+### NodeJs
 
 É um RTE (Ambiente de execução), multi plataforma, open source, que executa código JavaScript fora do browser.
 
@@ -91,16 +91,14 @@ Verificado o correto funcionamento da instalação do _nvm_ podemos proceder com
    ```
    onde v12.13.1 pode ser substituído por qualquer versão instalada localmente.
    resultando:
-   `
-   Now using node v12.13.1 (npm v6.12.1)`
+   `Now using node v12.13.1 (npm v6.12.1)`
    
    e ao trocar a versão ativa para 
    ```sh
    $ nvm use v13.2.0
    ```
    temos o seguinte resultado no terminal
-   `
-   Now using node v13.2.0 (npm v6.13.1)`
+   `Now using node v13.2.0 (npm v6.13.1)`
 
    repare que para cada versão do _node.js_, o _nvm_ utiliza a versão correspondente do _npm_, liberando-nos dessa preocupação.
 
@@ -124,7 +122,7 @@ Instalação de plugins e configuração para manter padrão mínimo
 
 .eslintrc.js
 
-```
+```js
 module.exports = {
   env: {
     browser: true,
