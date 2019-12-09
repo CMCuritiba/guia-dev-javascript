@@ -3,6 +3,17 @@ Baseado nos padrões definidos no curso da Rocketseat
 
 ## Ferramentas para desenvolvimento
 
+### NODE
+
+Um RTE, multi plataforma, open source, que executa código JavaScript fora do browser.
+
+Você pode facilmente instalar o NodeJs através 
+
+
+
+
+
+[]
 ### VSCode
 
 [Download](https://code.visualstudio.com/)
