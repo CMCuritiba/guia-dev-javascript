@@ -4,6 +4,108 @@ Baseado nos padrões definidos no curso da Rocketseat
 
 ## Ferramentas para desenvolvimento
 
+### NodeJs
+
+É um RTE (Ambiente de execução), multi plataforma, open source, que executa código JavaScript fora do browser.
+
+Você pode facilmente instalar o NodeJs através da página de download do próprio site Nodejs.org, ou de algumas outras formas mais convenientes para você.
+Mas, considerando que, supostamente, tenhamos a necessidade de utilizar versões diferentes do Node.js, esclarecemos aqui a _Melhor_ forma de instalar Node.js e NPM.
+
+Caso você já tenha instalado Node.js e NPM de forma global, não se preocupe, basta reverter a situação desistalando-os.
+Para a maioria dos casos, isto deve funcionar:
+```sh
+$ sudo apt-get remove nodejs
+$ sudo apt-get purge nodejs
+$ sudo apt-get autoremove
+```
+#### nvm (Node Version Manager)
+
+Então, a _Melhor_ forma de instalar o Node.js é utilizando o _nvm_, que nos permite instalar múltiplas versões de ambos, Node.js e NPM, e especificar qual versão estará __ativa__. 
+O _[nvm](https://github.com/nvm-sh/nvm)_ é perfeito para ambientes de desenvolvimento.
+
+
+Basicamente o que deve-se fazer é rodar o seguinte script:
+```sh
+$ sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+Após finalizado o script, mudanças terão sido feitas no ```.profile```, então caso não queira fechar a janela do terminal e abrir uma nova, rode o seguinte comando para recarregá-lo:
+```sh
+$ source ~/.profile
+```
+
+Agora, verifique se o _nvm_ foi instalado corretamente rodando:
+```sh
+$ nvm --version
+```
+
+>Caso tua instalação não tenha ocorrido conforme informado acima, verifique novamente os passos descritos, e se você os seguiu corretamente. Para maiores detalhes visite [nvm](https://github.com/nvm-sh/nvm).
+
+Verificado o correto funcionamento da instalação do _nvm_ podemos proceder com a instalação do _Node.js_ e _npm_.
+
+1. Para instalar uma versão específica do _Node.js_, utilize o comando:
+   ```sh
+   $ nvm install v13.2.0
+   ``` 
+   onde _v13.2.0_ pode ser substituído por qualquer versão disponível.
+
+2. Para listar as versões disponíveis utilize:
+   ```sh
+   $ nvm ls-remote
+   ```
+
+3. Para listar as versões instaladas localmente utilize:
+   ```sh
+   $ nvm ls
+   ```
+   resultado, para este comando, antes de instalar qualquer versão:
+   ```sh
+   node -> stable (-> N/A) (default)
+   iojs -> N/A (default)
+   lts/* -> lts/erbium (-> N/A)
+   lts/argon -> v4.9.1 (-> N/A)
+   lts/boron -> v6.17.1 (-> N/A)
+   lts/carbon -> v8.16.2 (-> N/A)
+   lts/dubnium -> v10.17.0 (-> N/A)
+   lts/erbium -> v12.13.1 (-> N/A)
+   ```
+   resultado, para este comando, após instalações, (instaladas v12.13.1 e v.13.2.0):
+   ```sh
+   v12.13.1
+   ->      v13.2.0
+   default -> v13.2.0
+   node -> stable (-> v13.2.0) (default)
+   stable -> 13.2 (-> v13.2.0) (default)
+   iojs -> N/A (default)
+   lts/* -> lts/erbium (-> v12.13.1)
+   lts/argon -> v4.9.1 (-> N/A)
+   lts/boron -> v6.17.1 (-> N/A)
+   lts/carbon -> v8.16.2 (-> N/A)
+   lts/dubnium -> v10.17.0 (-> N/A)
+   lts/erbium -> v12.13.1
+   ```
+
+
+3. Após instalar as versões desejadas, para **_ativar_** uma versão específica utilize:
+   ```sh
+   $ nvm use v12.13.1
+   ```
+   onde v12.13.1 pode ser substituído por qualquer versão instalada localmente.
+   resultando:
+   `Now using node v12.13.1 (npm v6.12.1)`
+   
+   e ao trocar a versão ativa para 
+   ```sh
+   $ nvm use v13.2.0
+   ```
+   temos o seguinte resultado no terminal
+   `Now using node v13.2.0 (npm v6.13.1)`
+
+   repare que para cada versão do _node.js_, o _nvm_ utiliza a versão correspondente do _npm_, liberando-nos dessa preocupação.
+
+> Mais detalhes sobre o nvm em seu [repositório](https://github.com/nvm-sh/nvm) no github.
+
+
 ### VSCode
 
 [Download](https://code.visualstudio.com/)
@@ -21,7 +123,7 @@ Instalação de plugins e configuração para manter padrão mínimo
 
 .eslintrc.js
 
-```
+```js
 module.exports = {
   env: {
     browser: true,
