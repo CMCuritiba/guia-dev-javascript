@@ -112,8 +112,10 @@ Verificado o correto funcionamento da instalação do _nvm_ podemos proceder com
 settings.json
 
 ```
-"editor.formatOnSave": true,
-"eslint.autoFixOnSave": true,
+"editor.formatOnSave": false,
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+},
 ```
 
 Instalação de plugins e configuração para manter padrão mínimo
