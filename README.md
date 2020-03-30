@@ -271,7 +271,7 @@ raiz/__tests__ => Diretórios dos testes da aplicação
 raiz/__tests__/coverage => Diretório com relatórios criado automaticamente pelo suite de testes.
 raiz/__tests__/integration => Testes de integração
 raiz/__tests__/unit => Testes unitários
-raiz/__tests__/unit => Arquivos utilitários para a suite de testes
+raiz/__tests__/util => Arquivos utilitários para a suite de testes
 
 raiz/src => Diretório onde fica o código-fonte da aplicação
 
